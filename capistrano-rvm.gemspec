@@ -6,7 +6,7 @@ Gem::Specification.new do |gem|
   gem.email         = ["softr8@gmail.com"]
   gem.description   = %q{Capistrano tasks to manage rvm commands}
   gem.summary       = %q{Some tasks to install rvm, ruby and bundler without pain}
-  gem.homepage      = ""
+  gem.homepage      = "https://github.com/softr8/capistrano-rvm"
 
   gem.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
   gem.files         = `git ls-files`.split("\n")
