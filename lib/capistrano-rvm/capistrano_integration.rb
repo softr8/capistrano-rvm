@@ -23,7 +23,7 @@ module CapistranoResque
           desc "Installs rvm"
           task :install, :except => {:no_release => true} do
             set :rvm_ruby_string, ''
-            run "rvm | grep 'RVM' >/dev/null || curl -s https://raw.github.com/wayneeseguin/rvm/master/binscripts/rvm-installer | bash -s stable", shell: 'bash -l'
+            run "rvm | grep 'RVM' >/dev/null || curl -sS https://raw.github.com/wayneeseguin/rvm/master/binscripts/rvm-installer | bash -s stable", shell: 'bash -l'
             set :rvm_ruby_string, tmp_ruby_string
           end
 
